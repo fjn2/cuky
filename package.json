@@ -2,17 +2,29 @@
   "name": "cuky",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://fjn2.github.io/cuky",
   "dependencies": {
+    "@fortawesome/fontawesome-common-types": "^0.2.25",
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-regular-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.7",
     "@material-ui/core": "^4.6.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-fontawesome": "^1.7.1",
     "react-scripts": "0.9.x"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }

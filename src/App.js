@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faMagic, faStop, faIn } from '@fortawesome/free-solid-svg-icons'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faSoundcloud } from '@fortawesome/free-brands-svg-icons'
 
 
 const App = () => {
@@ -47,7 +47,7 @@ const App = () => {
     <div className="App">
       <div className="App-header">
         <audio ref={audioPlayer} src="demo1.mp4" crossOrigin="anonymous" preload="auto" />
-        <audio ref={audioPlayerWithMagic} src="demo1.mp4" crossOrigin="anonymous" preload="auto" />
+        <audio ref={audioPlayerWithMagic} src="demo1_magic.mpeg" crossOrigin="anonymous" preload="auto" />
         <div style={{
           display: 'flex',
           alignItems: 'stretch',
@@ -75,6 +75,15 @@ const App = () => {
       <p className="App-intro">
         This is <b>Cuky</ b> he will rock you!
       </p>
+      <a href="https://soundcloud.com/marianocukierman" target="_blank" style={{
+            margin: '1rem',
+            fontSize: '60px',
+            position: 'absolute',
+            bottom: '0',
+            right: '70px'
+        }}>
+          <FontAwesomeIcon icon={faSoundcloud} />
+      </a>
       <a href="https://www.instagram.com/ft.cuki/?hl=es-la" target="_blank" style={{
             margin: '1rem',
             fontSize: '60px',
@@ -83,7 +92,7 @@ const App = () => {
             right: '0'
         }}>
           <FontAwesomeIcon icon={faInstagram} />
-        </a>
+      </a>
     </div>
   );
 }
